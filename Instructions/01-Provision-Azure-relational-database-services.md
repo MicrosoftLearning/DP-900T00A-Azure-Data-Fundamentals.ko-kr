@@ -1,12 +1,18 @@
 ---
 lab:
-    title: '랩 01: Azure 관계형 데이터베이스 서비스 프로비전'
-    module: '모듈 02: Azure에서 관계형 데이터 살펴보기'
+  title: '랩 01: Azure 관계형 데이터베이스 서비스 프로비저닝'
+  module: 'Module 02: Explore relational data in Azure'
+ms.openlocfilehash: 48b60c0a3b6c5b49b34647cd4f1bcfa16909508b
+ms.sourcegitcommit: 32d1de2c37267f8d3cedb0f0064b08be2cde5bb7
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "139267736"
 ---
+## <a name="instructions"></a>Instructions
 
-## 지침
-Contoso의 데이터 엔지니어로서 Azure용 SQL Server, PostgreSQL 및 MySQL 서버를 만들고 구성하라는 요청을 받았습니다.
+Contoso에서 데이터 엔지니어를 담당하면서 Azure용 SQL Server, PostgreSQL 및 MySQL 서버를 만들고 구성하라는 요청을 받았습니다.
 
-이 랩에서는 Azure의 서버인 SQL Server, PostgreSQL, MySQL 중 하나를 만들고 구성해 봅니다.
+이 랩에서는 Azure의 SQL Server, PostgreSQL 또는 MySQL 서버 중 하나를 만들고 구성합니다.
 
-1.	Microsoft Learn 연습(https://aka.ms/dp900lab01-kor)으로 이동하고 브라우저에서 단원을 완료합니다. 
+1.  https://aka.ms/dp900lab01 의 Microsoft Learn 연습으로 이동하고 브라우저에서 단원을 완료합니다. 

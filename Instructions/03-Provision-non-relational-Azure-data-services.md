@@ -1,17 +1,15 @@
 ---
 lab:
-    title: '랩 03: 비관계형 Azure 데이터 서비스 프로비전'
-    module: '모듈 03: Azure에서 비관계형 데이터 살펴보기'
+  title: '랩 03: 비관계형 Azure Data Services 프로비저닝'
+  module: 'Module 03: Explore non-relational data in Azure'
+ms.openlocfilehash: b5f4fd9fbe05bcea6cd640a59e45eab50a5f3e05
+ms.sourcegitcommit: 32d1de2c37267f8d3cedb0f0064b08be2cde5bb7
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "139267712"
 ---
+## <a name="instructions"></a>Instructions
+이 연습에서는 Azure Storage를 비관계형 데이터 저장소로 사용할 수 있는 방법을 살펴봅니다.
 
-## 지침
-샘플 시나리오에서는 다음 데이터 저장소를 만들기로 결정했습니다:
-
-* 재고의 양에 대한 정보를 보유하기 위한 Cosmos DB. 수량 정도에 대한 현재 및 과거 정보를 저장해야 하므로, 시간이 지남에 따라 정도가 어떻게 달라지는지 추적할 수 있습니다. 데이터는 매일 기록됩니다.
-* 생산 및 품질 데이터를 보관하기 위한 Data Lake Store.
-* 회사가 제조하는 제품의 이미지를 보관하기위한 Blob 컨테이너.
-* 보고서를 공유하기 위한 파일 스토리지.
-
-이 랩에서는 Cosmos DB 계정을 프로비전 및 구성하고 데이터베이스, 컨테이너 및 샘플 문서를 만들어 테스트합니다. 또한 Blob, 파일 및 Data Lake Storage를 제공할 수 있는 Azure Storage 계정을 프로비전합니다.
-
-1.	Microsoft Learn 연습(https://aka.ms/dp900lab03-kor)으로 이동하고 브라우저에서 단원을 완료합니다. 
+1.  https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/6-exercise-azure-storage 의 Microsoft Learn 연습으로 이동하고 브라우저에서 단원을 완료합니다. 
