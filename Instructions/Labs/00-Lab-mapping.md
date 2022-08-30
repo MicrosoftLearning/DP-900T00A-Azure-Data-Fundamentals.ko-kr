@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: d886b438a93762235ecd051230f873dae1b674ce
-ms.sourcegitcommit: 1117342052bce0bbd5a703bd1f763862b9129807
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140682441"
----
 # <a name="dp-900-trainer-lab-mapping"></a>DP-900 트레이너 랩 매핑
 
 이 과정, DP-900: Microsoft Azure Data Fundamentals에는 강사 진행 교육용으로 지정된 랩 세트가 있습니다. 
