@@ -18,9 +18,9 @@ lab:
 
 이 연습에서는 Azure Database for MySQL 리소스를 프로비저닝해 봅니다.
 
-1. In the Azure portal, select <bpt id="p1">**</bpt>&amp;#65291; Create a resource<ept id="p1">**</ept> from the upper left-hand corner and search for <bpt id="p2">*</bpt>Azure Database for MySQL<ept id="p2">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Azure Database for MySQL<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. Azure Portal의 왼쪽 상단에서 **&#65291; 리소스 만들기**를 선택하고 *Azure Database for MySQL*을 검색합니다. 그런 다음 표시되는 **Azure Database for MySQL** 페이지에서 **만들기**를 선택합니다.
 
-1. Review the Azure Database for MySQL options that are available. Then for <bpt id="p1">**</bpt>Resource type<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Flexible Server<ept id="p2">**</ept> and select <bpt id="p3">**</bpt>Create<ept id="p3">**</ept>.
+1. 사용할 수 있는 Azure Database for MySQL 옵션을 검토합니다. 그런 다음 **리소스 종류**의 **유연한 서버**를 선택하고 **만들기**를 선택합니다.
 
     ![Azure Database for MySQL 배포 옵션의 스크린샷](images/mysql-options.png)
 
@@ -43,7 +43,7 @@ lab:
 
 1. **검토 + 만들기**를 선택하고 **만들기**를 선택하여 Azure MySQL 데이터베이스를 만듭니다.
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+1. 배포가 완료될 때까지 기다립니다. 그런 다음 배포된 리소스로 이동합니다. 리소스의 모습은 다음과 같습니다.
 
     ![Azure Database for MySQL 페이지를 보여 주는 Azure Portal의 스크린샷](images/mysql-portal.png)
 

@@ -15,12 +15,12 @@ lab:
 
 ## <a name="create-a-cosmos-db-account"></a>Cosmos DB 계정 만들기
 
-To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
+Cosmos DB를 사용하려면 Azure 구독에서 Cosmos DB 계정을 프로비저닝 해야 합니다. 이 연습에서는 코어(SQL) API를 사용하는 Cosmos DB 계정을 프로비저닝 합니다.
 
-1. In the Azure portal, select <bpt id="p1">**</bpt>+ Create a resource<ept id="p1">**</ept> at the top left, and search for <bpt id="p2">*</bpt>Azure Cosmos DB<ept id="p2">*</ept>.  In the results, select <bpt id="p1">**</bpt>Azure Cosmos DB<ept id="p1">**</ept> and select  <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. Azure Portal 왼쪽 위에서 **+ 리소스 만들기**를 선택하고 Azure Cosmos DB를 검색합니다.  결과에서 **Azure Cosmos DB**를 선택하고 **만들기**를 선택합니다.
 1. **코어(SQL) - 권장** 타일에서 **만들기**를 선택합니다.
 1. 다음 세부 정보를 입력한 다음 **검토 + 만들기**를 선택합니다. 
-    - <bpt id="p1">**</bpt>Subscription<ept id="p1">**</ept>: If you're using a sandbox, select <bpt id="p2">*</bpt>Concierge Subscription<ept id="p2">*</ept>. Otherwise, select your Azure subscription.
+    - **구독**:샌드박스를 사용하고 있다면 컨시어지 구독을 선택합니다. 그렇지 않다면 사용자의 Azure 구독을 선택합니다.
     - **리소스 그룹**: 샌드박스를 사용하고 있다면 기존 리소스 그룹을 선택합니다(이름의 예: *learn-xxxx...* ). 그렇지 않다면 원하는 이름으로 새 리소스 그룹을 만듭니다.
     - **계정 이름**: 고유한 이름을 입력합니다.
     - **위치**: 권장 위치 선택
@@ -28,7 +28,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     - ** 할인 적용**: 사용 가능한 경우 적용 선택
     - **총 계정 처리량 제한**: 선택하지 않음
 1. 구성의 유효성이 검사되면 **만들기**를 선택합니다.
-1. Wait for deployment to complete. Then go to the deployed resource.
+1. 배포가 완료될 때까지 기다립니다. 그런 다음, 배포된 리소스로 이동합니다.
 
 ## <a name="create-a-sample-database"></a>예제 데이터베이스 만들기
 
@@ -41,7 +41,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ## <a name="view-and-create-items"></a>항목 보기 및 만들기
 
-1. In the Data Explorer page, expand the <bpt id="p1">**</bpt>SampleDB<ept id="p1">**</ept> database and the <bpt id="p2">**</bpt>SampleContainer<ept id="p2">**</ept> container, and select <bpt id="p3">**</bpt>Items<ept id="p3">**</ept> to see a list of items in the container. The items represent addresses, each with a unique id and other properties.
+1. 데이터 탐색기 페이지에서 **SampleDB** 데이터베이스와 **SampleContainer** 컨테이너를 확장하고 **항목**을 선택하여 컨테이너의 항목 목록을 확인합니다. 항목은 주소를 나타내며 각각 고유한 ID와 기타 속성을 갖습니다.
 1. 목록에서 항목을 선택하여 항목 데이터의 JSON 표현을 확인합니다.
 1. 페이지 맨 위에서 **새 항목**을 선택하여 새 빈 항목을 만듭니다.
 1. 다음과 같이 새 항목에 대한 JSON을 수정한 다음 **저장**을 선택합니다.
@@ -71,6 +71,6 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 1. **쿼리 실행** 단추를 사용하여 수정된 쿼리를 실행하고 결과를 검토합니다. 여기에는 **주소** 필드에 "Any St."라는 텍스트가 포함된 항목의 JSON 엔터티가 포함됩니다.
 1. SQL 쿼리 편집기를 닫고 변경 내용을 삭제합니다.
 
-    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
+    Azure Portal에서 데이터 탐색기 인터페이스를 사용하여 Cosmos DB 데이터베이스에서 JSON 엔터티를 만들고 쿼리하는 방법을 살펴보았습니다. 실제 시나리오에서 애플리케이션 개발자는 많은 프로그래밍 언어 SDK(소프트웨어 개발 키트) 중 하나를 사용하여 코어(SQL) API를 호출하고 데이터베이스의 데이터를 사용합니다.
 
 > **팁**: Azure Cosmos DB 탐색을 완료하면 이 연습에서 만든 리소스 그룹을 삭제할 수 있습니다.

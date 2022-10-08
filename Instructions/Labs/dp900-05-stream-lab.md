@@ -18,7 +18,7 @@ lab:
 
 1. Azure 구독 자격 증명을 사용하여 [Azure Portal](https://portal.azure.com)에서 Azure 구독에 로그인합니다.
 
-1. Use the <bpt id="p1">**</bpt>[<ph id="ph1">\&gt;</ph>_]<ept id="p1">**</ept> button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a <bpt id="p2">***</bpt>Bash<ept id="p2">***</ept> environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+1. 페이지 위쪽의 검색 창 오른쪽에 있는 **[\>_]** 단추를 사용하여 Azure Portal에서 새 Cloud Shell을 만들고 ***Bash*** 환경을 선택하고 메시지가 표시되면 스토리지를 만듭니다. Cloud Shell은 다음과 같이 Azure Portal 아래쪽 창에 명령줄 인터페이스를 제공합니다.
 
     ![Cloud Shell 창이 있는 Azure Portal](./images/cloud-shell.png)
 
@@ -50,7 +50,7 @@ lab:
 
 ## <a name="explore-the-azure-resources"></a>Azure 리소스 살펴보기
 
-1. In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com?azure-portal=true)</ept>, on the home page, select <bpt id="p2">**</bpt>Resource groups<ept id="p2">**</ept> to see the resource groups in your subscription. This should include the <bpt id="p1">**</bpt>learn*xxxxxxxxxxxxxxxxx...<ept id="p1">**</ept>* resource group identified by the setup script.
+1. [Azure Portal](https://portal.azure.com?azure-portal=true) 홈페이지에서 **리소스 그룹**을 선택하여 구독의 리소스 그룹을 확인합니다. 여기에는 설치 스크립트로 확인된 **learn*xxxxxxxxxxxxxxxxx...** * 리소스 그룹이 포함되어야 합니다.
 2. **learn*xxxxxxxxxxxxxxxxx...** * 리소스 그룹을 선택하고, 그 안에 있는 리소스를 검토합니다. 다음이 포함되어야 합니다.
     - 들어오는 디바이스 데이터를 받는 데 사용되는 **iothub*xxxxxxxxxxxxx***라는 *IoT Hub*.
     - 데이터 처리 결과가 기록되는 **store*xxxxxxxxxxxx***라는 스토리지 계정.
@@ -61,7 +61,7 @@ lab:
     > **참고**: 학습 샌드박스를 사용하는 경우 리소스 그룹에 **cloudshell*xxxxxxxx***이라는 또 다른 스토리지 계정도 포함될 수 있습니다. 이것은 설치 스크립트 실행에 사용한 Azure Cloud Shell용 데이터 저장에 사용됩니다.
 
 3. **stream*xxxxxxxxxxxxx*** Stream Analytics 작업을 선택하고 해당 **개요** 페이지에서 정보를 확인합니다. 다음 상세 정보에 유의합니다.
-    - The job has one <bpt id="p1">*</bpt>input<ept id="p1">*</ept> named <bpt id="p2">**</bpt>iotinput<ept id="p2">**</ept>, and one <bpt id="p3">*</bpt>output<ept id="p3">*</ept> named <bpt id="p4">**</bpt>bloboutput<ept id="p4">**</ept>. These reference the IoT Hub and Storage account created by the setup script.
+    - 이 작업은 **iotinput**이라는 입력과 **bloboutput**이라는 출력이 하나씩 있습니다. 이는 설치 스크립트에서 만든 IoT Hub 및 Storage 계정을 참조합니다.
     - 이 작업에는 **iotinput** 입력에서 데이터를 읽고 10초마다 처리되는 메시지 수를 계수하여 집계하고 그 결과를 **bloboutput** 출력에 기록하는 쿼리가 있습니다.
 
 ## <a name="use-the-resources-to-analyze-streaming-data"></a>리소스를 사용하여 스트리밍 데이터 분석

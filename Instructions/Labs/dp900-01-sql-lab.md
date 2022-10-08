@@ -16,7 +16,7 @@ lab:
 
 ## <a name="provision-an-azure-sql-database-resource"></a>Azure SQL Database 리소스 프로비저닝하기
 
-1. In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com?azure-portal=true)</ept>, select <bpt id="p2">**</bpt>&amp;#65291; Create a resource<ept id="p2">**</ept> from the upper left-hand corner and search for <bpt id="p3">*</bpt>Azure SQL<ept id="p3">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Azure SQL<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. [Azure Portal](https://portal.azure.com?azure-portal=true)의 왼쪽 상단에서 **&#65291; 리소스 만들기**를 선택하고 *Azure SQL*을 검색합니다. 그런 다음 표시되는 **Azure SQL** 페이지에서 **만들기**를 선택합니다.
 
 1. 사용 가능한 Azure SQL 옵션을 검토한 다음 **SQL 데이터베이스** 타일에서 **단일 데이터베이스**가 선택되어 있는지 확인하고 **만들기**를 선택합니다.
 
@@ -26,12 +26,12 @@ lab:
     - **구독**: Azure 구독을 선택합니다.
     - **리소스 그룹**: 선택한 이름으로 새 리소스 그룹을 만듭니다.
     - **데이터베이스 이름**: *AdventureWorks*
-    - <bpt id="p1">**</bpt>Server<ept id="p1">**</ept>:  Select <bpt id="p2">**</bpt>Create new<ept id="p2">**</ept> and create a new server with a unique name in any available location. Use <bpt id="p1">**</bpt>SQL authentication<ept id="p1">**</ept> and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
+    -                 **서버**: **새로 만들기**를 선택하고 사용 가능한 위치에 고유한 이름으로 새 서버를 만듭니다. **SQL 인증**을 사용하고 서버 관리자 로그인으로 본인의 이름을, 암호로 적당히 복잡한 암호를 지정합니다. (암호는 뒤에서 필요하니 기억해 두세요.)
     - **SQL 탄력적 풀을 사용하고 싶나요?**: 아니요
     - **컴퓨팅 + 스토리지**: 그대로 두기
     - **백업 스토리지 중복**: 로컬 중복 백업 스토리지
 
-1. On the <bpt id="p1">**</bpt>Create SQL Database<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Next :Networking &gt;<ept id="p2">**</ept>, and on the <bpt id="p3">**</bpt>Networking<ept id="p3">**</ept> page, in the <bpt id="p4">**</bpt>Network connectivity<ept id="p4">**</ept> section, select <bpt id="p5">**</bpt>Public endpoint<ept id="p5">**</ept>. Then select <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> for both options in the <bpt id="p2">**</bpt>Firewall rules<ept id="p2">**</ept> section to allow access to your database server from Azure services and your current client IP address.
+1. **SQL 데이터베이스 만들기** 페이지에서 **다음: 네트워킹 >** 을 선택하고 **네트워킹** 페이지의 **네트워크 연결** 섹션에서 **퍼블릭 엔드포인트**를 선택합니다. 그런 다음 **방화벽 규칙** 섹션의 두 가지 옵션에 대해 **예**를 선택하여 Azure 서비스와 현재 클라이언트 IP 주소에서 데이터베이스 서버에 액세스할 수 있도록 허용합니다.
 
 1. **다음: 보안 >** 을 선택하고 **Microsoft Defender for SQL 사용** 옵션을 **나중에**로 설정합니다.
 
@@ -39,7 +39,7 @@ lab:
 
 1. **검토 + 만들기**를 선택하고 **만들기**를 선택하여 Azure SQL Database를 만듭니다.
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+1. 배포가 완료될 때까지 기다립니다. 그런 다음 배포된 리소스로 이동합니다. 리소스의 모습은 다음과 같습니다.
 
     ![SQL Database 페이지를 보여 주는 Azure Portal의 스크린샷](images//sql-database-portal.png)
 

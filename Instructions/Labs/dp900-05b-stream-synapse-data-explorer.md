@@ -20,7 +20,7 @@ lab:
 
 1. [https://portal.azure/com](https://portal.azure.com?azure-portal=true)에서 Azure Portal을 열고 Azure 구독과 연관된 자격 증명을 사용하여 로그인합니다.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **참고**: 현재 구독을 포함하는 디렉터리에서 작업하고 있는지 확인합니다. 디렉터리는 오른쪽 상단의 사용자 ID 아래에서 확인할 수 있습니다. 그렇지 않은 경우 사용자 아이콘을 선택하고 디렉터리를 전환합니다.
 
 1. Azure Portal의 **홈** 페이지에서 **&#65291; 리소스 만들기** 아이콘을 사용하여 새 리소스를 만듭니다.
 1. *Azure Synapse Analytics*를 검색하고, 다음 설정을 사용하여 새 **Azure Synapse Analytics** 리소스를 만듭니다.
@@ -33,7 +33,7 @@ lab:
         - **계정 이름**: 고유한 이름(예: "datalake<your_name>")의 새 계정을 만듭니다.
         - **파일 시스템 이름**: 고유한 이름(예: "fs<your_name>")의 새 파일 시스템을 만듭니다.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **참고**: Synapse Analytics 작업 영역에서는 Azure 구독에 리소스 그룹 두 개가 있어야 합니다. 한 그룹은 명시적으로 만든 리소스용이고, 다른 하나는 서비스에서 사용하는 관리되는 리소스용입니다. 데이터, 스크립트 및 기타 아티팩트를 저장하는 데이터 레이크 스토리지 계정도 필요합니다.
 
 1. 이러한 세부 정보를 입력했다면 **검토 + 만들기**를 선택하고 **만들기**를 선택하여 작업 영역을 만듭니다.
 1. 작업 영역이 생성될 때까지 기다립니다. 5분 정도 걸릴 수 있습니다.
@@ -72,7 +72,7 @@ lab:
     - **데이터 형식**: CSV
     - **첫 번째 레코드 무시**: 선택됨
     - **매핑**: devices_mapping
-1. Ensure the column data types have been correctly identified as <bpt id="p1">*</bpt>Time (datetime)<ept id="p1">*</ept>, <bpt id="p2">*</bpt>Device (string)<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>Value (long)<ept id="p3">*</ept>). Then select <bpt id="p1">**</bpt>Next: Start Ingestion<ept id="p1">**</ept>.
+1. 열 데이터 형식이 시간(datetime), 디바이스(string) 및 값(long)으로 올바르게 식별되었는지 확인합니다. 그런 다음, **다음: 수집 시작**을 선택합니다.
 1. 수집이 완료되면 **닫기**를 선택합니다.
 1. Azure Data Explorer의 **쿼리** 탭에서 **iot-data** 데이터베이스가 선택되어 있는지 확인하고 쿼리 창에서 다음 쿼리를 입력합니다.
 
@@ -90,13 +90,13 @@ lab:
 
     결과가 이와 일치하면 파일의 데이터에서 **devices** 테이블을 성공적으로 만든 것입니다.
 
-    > <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: In this example, you imported a very small amount of batch data from a file, which is fine for the purposes of this exercise. In reality, you can use Data Explorer to analyze much larger volumes of data; and since you enabled stream ingestion, you could also have configured Data Explorer to ingest data into the table from a streaming source such as Azure Event Hubs.
+    >                 **팁**: 이 예제에서는 파일에서 매우 적은 양의 일괄 처리 데이터를 가져왔는데 이 연습의 용도로는 괜찮습니다. 실제로 데이터 탐색기를 사용하여 훨씬 많은 양의 데이터를 분석할 수 있습니다. 스트림 수집을 사용하도록 설정했으므로 Azure Event Hubs와 같은 스트리밍 원본에서 테이블로 데이터를 수집하도록 데이터 탐색기를 구성할 수도 있습니다.
 
 ## <a name="use-kusto-query-language-to-query-the-table-in-synapse-studio"></a>Synapse Studio에서 Kusto 쿼리 언어를 사용하여 테이블 쿼리
 
 1. Azure Data Explorer 브라우저 탭을 닫고 Synapse Studio가 포함된 탭으로 돌아갑니다.
-1. On the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> page, expand the <bpt id="p2">**</bpt>iot-data<ept id="p2">**</ept> database and its <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept> folder. Then in the <bpt id="p1">**</bpt>...<ept id="p1">**</ept> menu for the <bpt id="p2">**</bpt>devices<ept id="p2">**</ept> table, select <bpt id="p3">**</bpt>New KQL Script<ept id="p3">**</ept><ph id="ph1"> &gt; </ph><bpt id="p4">**</bpt>Take 1000 rows<ept id="p4">**</ept>.
-1. Review the generated query and its results. The query should contain the following code:
+1. **데이터** 페이지에서 **iot-data** 데이터베이스 및 해당 **Tables** 폴더를 확장합니다. 그런 다음 **devices** 테이블의 **...** 메뉴에서 **새 KQL 스크립트** > **1,000개 행 사용**을 선택합니다.
+1. 생성된 쿼리 및 해당 결과를 검토합니다. 쿼리에는 다음 코드가 포함되어야 합니다.
 
     ```kusto
     devices
@@ -112,7 +112,7 @@ lab:
     | where Device == 'Dev1'
     ```
 
-1. Select <bpt id="p1">**</bpt>&amp;#9655; Run<ept id="p1">**</ept> to run the query. Then review the results, which should contain only the rows for the <bpt id="p1">*</bpt>Dev1<ept id="p1">*</ept> device.
+1. **&#9655; 실행**을 선택하여 쿼리를 실행합니다. 그런 다음 결과를 검토합니다. *Dev1* 디바이스에 대한 행만 포함되어야 합니다.
 
 1. 쿼리를 다음과 같이 수정합니다.
 
