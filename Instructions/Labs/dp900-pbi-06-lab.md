@@ -19,11 +19,11 @@ lab:
 Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 않은 경우 무료로 다운로드하여 설치할 수 있습니다.
 
 1. [https://aka.ms/power-bi-desktop](https://aka.ms/power-bi-desktop?azure-portal=true)에서 Power BI Desktop 설치 프로그램을 다운로드합니다.
-1. When the file has downloaded, open it, and use the setup wizard to install Power BI Desktop on your computer. This insatllation may take a few minutes.
+1. 파일이 다운로드되면 파일을 열고 설치 마법사를 사용하여 컴퓨터에 Power BI Desktop을 설치합니다. 설치하는 데 몇 분 정도 걸릴 수 있습니다.
 
 ## <a name="import-data"></a>데이터 가져오기
 
-1. Open Power BI Desktop. The application interface should look similar to this:
+1. Power BI Desktop을 엽니다. 그 애플리케이션 인터페이스는 다음과 유사합니다.
 
     ![Power BI Desktop 시작 화면을 보여 주는 스크린샷](images/power-bi-start.png)
 
@@ -41,7 +41,7 @@ Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 �
 
 1. 웹 콘텐츠 액세스 대화 상자에서 **연결**을 선택합니다.
 
-1. Verify that the URL opens a dataset containing customer data, as shown below. Then select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> to load the data into the data model for your report.
+1. URL에서 아래와 같이 고객 데이터가 포함된 데이터 세트가 열리는지 확인합니다. 그런 다음 **로드**를 선택하여 보고서용 데이터 모델로 데이터를 로드합니다.
 
     ![Power BI에 표시된 고객 데이터의 데이터 세트를 보여 주는 스크린샷](images/customers.png)
 
@@ -67,7 +67,7 @@ Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 �
 
 가져온 데이터의 세 테이블이 데이터 모델에 로드되었으니 이제부터 이것을 탐색하고 상세히 검색합니다.
 
-1. In Power BI Desktop, on the left-side edge, select the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> tab, and then arrange the tables in the model so you can see them. You can hide the panes on the right side by using the <bpt id="p1">**</bpt><ph id="ph1">&gt;&gt;</ph><ept id="p1">**</ept> icons:
+1. Power BI Desktop 왼쪽 가장자리에서 **모델** 탭을 선택한 다음, 모델의 테이블을 정렬하여 표시할 수 있습니다. **>>** 아이콘을 사용하여 오른쪽의 창을 숨길 수 있습니다.
 
     ![Power BI의 모델 탭을 보여 주는 스크린샷](images/model-tab.png)
 
@@ -77,12 +77,12 @@ Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 �
 
     이 단계에서는 수익 값이 보고서 시각화에 통화로 표시되도록 합니다.
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Create hierarchy<ept id="p3">**</ept>. This step creates a hierarchy named <bpt id="p1">**</bpt>Category Hierarchy<ept id="p1">**</ept>. You may need to expand or scroll in the <bpt id="p1">**</bpt>products<ept id="p1">**</ept> table to see this - you can also see it in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane:
+1. 제품 테이블에서 **Category** 필드를 마우스 오른쪽 단추로 클릭하고(또는 **&vellip;** 메뉴를 열고) **계층 구조 만들기**를 선택합니다. 이 단계에서는 **범주 계층**이라는 계층 구조를 만듭니다. 이것을 표시하려면 **products** 테이블을 확장하거나 스크롤해야 할 수 있습니다. **필드** 창에도 표시할 수 있습니다.
 
     ![Power BI에서 범주 계층을 추가하는 방법을 보여 주는 스크린샷](images/category-hierarchy.png)
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Add to hierarchy<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>Category Hierarchy<ept id="p4">**</ept>. This adds the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field to the hierarchy you created previously.
-1. In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, right-click <bpt id="p2">**</bpt>Category Hierarchy<ept id="p2">**</ept> (or open its <bpt id="p3">**</bpt>...<ept id="p3">**</ept> menu) and select <bpt id="p4">**</bpt>Rename<ept id="p4">**</ept>. Then rename the hierarchy to <bpt id="p1">**</bpt>Categorized Product<ept id="p1">**</ept>.
+1. 제품 테이블에서 **ProductName** 필드를 마우스 오른쪽 단추로 클릭하고(또는 **&vellip;** 메뉴를 열고) **계층 구조에 추가** > **범주 계층**을 선택합니다. 그러면 이전에 만든 계층 구조에 **ProductName** 필드가 추가됩니다.
+1. **필드** 창에서 **범주 계층**을 마우스 오른쪽 단추로 클릭하고(또는 해당 **...** 메뉴를 열고) **이름 바꾸기**를 선택합니다. 그런 다음, 계층 구조의 이름을 **Categorized Product**로 바꿉니다.
 
     ![Power BI에서 계층 구조의 이름을 바꾸는 방법을 보여 주는 스크린샷](images/rename-hierarchy.png)
 
@@ -95,9 +95,9 @@ Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 �
 
 ## <a name="create-a-report"></a>보고서 만들기
 
-Now you're almost ready to create a report. First you need to check some settings to ensure all visualizations are enabled.
+이제 보고서를 만들 준비가 거의 완료되었습니다. 먼저 일부 설정을 확인하여 모든 시각화를 사용하도록 설정해야 합니다.
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Options and Settings<ept id="p2">**</ept>. Then select <bpt id="p1">**</bpt>Options<ept id="p1">**</ept>, and in the <bpt id="p2">**</bpt>Security<ept id="p2">**</ept> section, ensure that <bpt id="p3">**</bpt>Use Map and Filled Map visuals<ept id="p3">**</ept> is enabled and select <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.
+1. **파일** 메뉴에서 **옵션 및 설정**을 선택합니다. 그런 다음 **옵션**을 선택하고 **보안** 섹션에서 **지도 및 채워진 지도 시각 개체 사용**이 사용하도록 설정되어 있는지 확인하고 **확인**을 선택합니다.
 
     ![PowerBI에서 지도 및 등치 지역도 시각적 개체 사용 속성을 설정하는 방법을 보여 주는 스크린샷](images/set-options.png)
 
@@ -107,42 +107,42 @@ Now you're almost ready to create a report. First you need to check some setting
 
     ![Power BI의 보고서 탭을 보여 주는 스크린샷](images/report-tab.png)
 
-1. In the ribbon, above the report design surface, select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept> and add a text box containing the text <bpt id="p2">**</bpt>Sales Report<ept id="p2">**</ept> to the report. Format the text to make it bold with a font size of 32.
+1. 리본의 보고서 디자인 화면 위에서 **텍스트 상자**를 선택하고 **판매 보고서**가 포함된 텍스트 상자를 보고서에 추가합니다. 글꼴 크기 32로 굵게 표시되도록 텍스트 서식을 지정합니다.
 
     ![Power BI에서 텍스트 상자를 추가하는 방법을 보여 주는 스크린샷](images/text-box.png)
 
-1. 파일이 다운로드되면 파일을 열고 설치 마법사를 사용하여 컴퓨터에 Power BI Desktop을 설치합니다.
+1. 보고서에서 빈 영역을 선택하여 텍스트 상자의 선택을 해제합니다. 그런 다음 **필드** 창에서 **제품**을 확장하고 **범주화된 제품** 필드를 선택합니다. 이 단계에서는 보고서에 테이블을 추가합니다.
 
     ![Power BI의 보고서에 분류된 제품 테이블을 추가하는 방법을 보여 주는 스크린샷](images/categorized-products-table.png)
 
-1. 설치하는 데 몇 분 정도 걸릴 수 있습니다.
+1. 테이블이 선택된 상태에서 **필드** 창에서 **주문**을 확장하고 **수익**을 선택합니다. 테이블에 새 Revenue 열이 추가됩니다. 확인하려면 테이블 크기를 확장해야 할 수도 있습니다.
 
-    The revenue is formatted as currency, as you specified in the model. However, you didn't specify the number of decimal places, so the values include fractional amounts. It won't matter for the visualizations you're going to create, but you could go back to the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> tab and change the decimal places if you wish.
+    수익은 모델에서 지정한 대로 통화 형식으로 지정됩니다. 그러나 소수 자릿수를 지정하지 않았으므로 값에 소수부 금액이 포함됩니다. 만들려는 시각화는 중요하지 않지만 **모델** 또는 **데이터** 탭으로 돌아가 소수 자릿수를 변경할 수 있습니다.
 
     ![보고서에 수익이 있는 분류된 제품 테이블을 보여 주는 스크린샷](images/revenue-column.png)
 
-1. With the table still selected, in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Stacked column chart<ept id="p2">**</ept> visualization. The table is changed to a column chart showing revenue by category.
+1. 테이블이 선택된 상태에서 **시각화** 창에서 **누적 세로 막대형 차트** 시각화를 선택합니다. 테이블이 범주별 수익을 보여주는 세로 막대형 차트로 바뀝니다.
 
     ![보고서에 수익이 있는 분류된 제품의 누적 세로 막대형 차트를 보여 주는 스크린샷](images/stacked-column-chart.png)
 
-1. Power BI Desktop을 엽니다.
+1. 선택한 세로 막대형 차트 위에서 **&#8595;** 아이콘을 선택하여 드릴다운을 켭니다. 그런 다음, 차트에서 두 번째 열("로드 바이크")을 선택하여 드릴다운하고 이 범주에 있는 개별 제품의 수익을 확인합니다. 이 기능은 범주와 제품의 계층 구조를 정의했기 때문에 가능합니다.
 
     ![범주 내의 제품을 보기 위해 드릴다운된 세로 막대형 차트를 보여 주는 스크린샷](images/drill-down.png)
 
-1. 그 애플리케이션 인터페이스는 다음과 유사합니다.
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Quantity<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>orders<ept id="p3">**</ept> table and the <bpt id="p4">**</bpt>Category<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>products<ept id="p5">**</ept> table. This step results in another column chart showing sales quantity by product category.
+1. 범주 수준까지 다시 드릴업하려면 **&#x2191;** 아이콘을 사용합니다. 그런 다음, **(** &#8595; **)** 아이콘을 선택하여 드릴다운 기능을 해제합니다.
+1. 보고서의 빈 영역을 선택한 다음, **필드** 창에서 **주문** 테이블의 **수량** 필드와 **제품** 테이블의 **범주** 필드를 선택합니다. 이 단계를 수행하면 제품 범주별 판매 수량을 보여 주는 다른 세로 막대형 차트가 생성됩니다.
 1. 새 세로 막대형 차트를 선택한 상태에서 **시각화** 창에서 **원형 차트**를 선택한 다음, 차트 크기를 조정하고 범주 세로 막대형 차트별로 수익 옆에 배치합니다.
 
     ![범주별 판매 수량을 보여 주는 원형 차트를 보여 주는 스크린샷](images/category-pie-chart.png)
 
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>City<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>customers<ept id="p3">**</ept> table and then select the <bpt id="p4">**</bpt>Revenue<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>orders<ept id="p5">**</ept> table. This results in a map showing sales revenue by city. Rearrange and resize the visualizations as needed:
+1. 보고서의 빈 영역을 선택한 다음 **필드** 창에서 **고객** 테이블에서 **도시** 필드를 선택한 다음, **주문** 테이블에서 **수익** 필드를 선택합니다. 그 결과 도시별 판매 수익을 보여 주는 지도가 생성됩니다. 필요에 따라 시각화를 다시 정렬하고 크기를 조정합니다.
 
     ![도시별 수익을 표시하는 지도를 보여 주는 스크린샷](images/revenue-map.png)
 
-1. In the map, note that you can drag, double-click, use a mouse-wheel, or pinch and drag on a touch screen to interact. Then select a specific city, and note that the other visualizations in the report are modified to highlight the data for the selected city.
+1. 지도에서 끌거나, 두 번 클릭하거나, 마우스 휠을 사용하거나, 터치 스크린을 잡아 끌어 상호작용할 수 있습니다. 그런 다음 특정 도시를 선택하고 보고서의 나머지 시각화가 수정되어 선택한 도시의 데이터가 강조표시되는지 확인합니다.
 
     ![선택한 도시의 데이터를 강조 표시하는 도시별 수익을 표시하는 지도를 보여 주는 스크린샷](images/selected-data.png)
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>. Then save the file with an appropriate .pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+1. **파일** 메뉴에서 **저장**을 선택합니다. 그런 다음 적절한 .pbix 파일 이름으로 파일을 저장합니다. 한가한 시간에 파일을 열고 데이터 모델링 및 시각화를 추가로 탐색할 수 있습니다.
 
 [Power BI 서비스](https://www.powerbi.com/?azure-portal=true) 구독이 있는 경우 계정에 로그인하고 보고서를 Power BI 작업 영역에 게시할 수 있습니다. 

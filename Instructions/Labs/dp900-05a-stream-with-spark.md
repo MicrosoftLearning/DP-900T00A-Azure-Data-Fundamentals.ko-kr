@@ -20,7 +20,7 @@ Synapse Analytics를 사용하려면 Azure 구독에서 Synapse Analytics 작업
 
 1. [Azure Portal](https://portal.azure.com?azure-portal=true)에서 Azure Portal을 열고 Azure 구독과 연관된 자격 증명을 사용하여 로그인합니다.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Ensure you are working in the directory containing your own subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **참고**: 현재 자체 구독을 포함하는 디렉터리에서 작업하고 있는지 확인합니다. 디렉터리는 오른쪽 상단의 사용자 ID 아래에서 확인할 수 있습니다. 그렇지 않은 경우 사용자 아이콘을 선택하고 디렉터리를 전환합니다.
 
 2. Azure Portal의 **홈** 페이지에서 **&#65291; 리소스 만들기** 아이콘을 사용하여 새 리소스를 만듭니다.
 3. *Azure Synapse Analytics*를 검색하고, 다음 설정을 사용하여 새 **Azure Synapse Analytics** 리소스를 만듭니다.
@@ -33,7 +33,7 @@ Synapse Analytics를 사용하려면 Azure 구독에서 Synapse Analytics 작업
         - **계정 이름**: 고유한 이름(예: "datalake<your_name>")의 새 계정을 만듭니다.
         - **파일 시스템 이름**: 고유한 이름(예: "fs<your_name>")의 새 파일 시스템을 만듭니다.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **참고**: Synapse Analytics 작업 영역에서는 Azure 구독에 리소스 그룹 두 개가 있어야 합니다. 한 그룹은 명시적으로 만든 리소스용이고, 다른 하나는 서비스에서 사용하는 관리되는 리소스용입니다. 데이터, 스크립트 및 기타 아티팩트를 저장하는 데이터 레이크 스토리지 계정도 필요합니다.
 
 4. 이러한 세부 정보를 입력했다면 **검토 + 만들기**를 선택하고 **만들기**를 선택하여 작업 영역을 만듭니다.
 5. 작업 영역이 생성될 때까지 기다립니다. 5분 정도 걸릴 수 있습니다.
@@ -67,7 +67,7 @@ Spark를 사용하여 스트림 처리를 탐색하려면 Spark 구조적 스트
 
 ## <a name="delete-azure-resources"></a>Azure 리소스 삭제
 
-> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you intend to complete other exercises that use Azure Synapse Analytics, you can skip this section. Otherwise, follow the steps below to avoid unnecessary Azure costs.
+>                 **참고**: : Azure Synapse Analytics를 사용하는 다른 연습을 완료하려는 경우에는 이 섹션을 건너뛸 수 있습니다. 그렇지 않은 경우에는 다음 단계를 따라 불필요한 Azure 비용을 방지하세요.
 
 1. 변경 내용을 저장하지 않고 Synapse Studio 브라우저 탭을 닫은 후에 Azure Portal로 돌아갑니다.
 1. Azure Portal의 **홈** 페이지에서 **리소스 그룹**을 선택합니다.
