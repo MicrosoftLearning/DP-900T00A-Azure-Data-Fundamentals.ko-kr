@@ -68,7 +68,7 @@ Azure Data Lake Store Gen2 지원을 사용하면 계층적 폴더를 사용하�
 
 1. `https://aka.ms/product2.json`에서 [product2.json](https://aka.ms/product2.json?azure-portal=true) JSON 파일을 로컬 컴퓨터로 다운로드하여 이전에 **product1.json**을 다운로드한 동일한 폴더에 저장합니다(나중에 스토리지에 업로드함).
 1. 스토리지 계정에 대한 Azure Portal 페이지의 왼쪽에서 **설정** 섹션까지 아래로 스크롤하고 **Data Lake Gen2 업그레이드**를 선택합니다.
-1. ****Data Lake Gen2 업그레이드**** 페이지에서 각 단계를 확장 및 완료하여 계층 구조 네임스페이스를 사용하고 Azure Data Lake Storage Gen 2를 지원하도록 스토리지 계정을 업그레이드합니다. 이 작업에는 약간의 시간이 걸릴 수 있습니다.
+1. **Data Lake Gen2 업그레이드** 페이지에서 각 단계를 확장 및 완료하여 계층 구조 네임스페이스를 사용하고 Azure Data Lake Storage Gen 2를 지원하도록 스토리지 계정을 업그레이드합니다. 이 작업에는 약간의 시간이 걸릴 수 있습니다.
 1. 업그레이드가 완료되면 왼쪽 창의 맨 위 섹션에서 **스토리지 브라우저**를 선택하고 여전히 **product_data** 폴더가 포함된 **data** Blob 컨테이너의 루트로 다시 이동합니다.
 1. **product_data** 폴더를 선택하고 이전에 업로드한 **product1.json** 파일이 여전히 포함되어 있는지 확인합니다.
 1. **&#10514; 업로드** 단추를 사용하여 **Blob 업로드** 패널을 엽니다.
