@@ -58,9 +58,7 @@ lab:
 
     이 세 리소스가 모두 표시되지 않으면 표시될 때까지 **&#8635; Refresh** 단추를 클릭합니다.
 
-    > **참고**: 학습 샌드박스를 사용하는 경우 리소스 그룹에 **cloudshell*xxxxxxxx***이라는 또 다른 스토리지 계정도 포함될 수 있습니다. 이것은 설치 스크립트 실행에 사용한 Azure Cloud Shell용 데이터 저장에 사용됩니다.
-
-3. **stream*xxxxxxxxxxxxx*** Stream Analytics 작업을 선택하고 해당 **개요** 페이지에서 정보를 확인합니다. 다음 상세 정보에 유의합니다.
+ 3. **stream*xxxxxxxxxxxxx*** Stream Analytics 작업을 선택하고 해당 **개요** 페이지에서 정보를 확인합니다. 다음 상세 정보에 유의합니다.
     - 이 작업은 **iotinput**이라는 입력과 **bloboutput**이라는 출력이 하나씩 있습니다. 이는 설치 스크립트에서 만든 IoT Hub 및 Storage 계정을 참조합니다.
     - 이 작업에는 **iotinput** 입력에서 데이터를 읽고 10초마다 처리되는 메시지 수를 계수하여 집계하고 그 결과를 **bloboutput** 출력에 기록하는 쿼리가 있습니다.
 
