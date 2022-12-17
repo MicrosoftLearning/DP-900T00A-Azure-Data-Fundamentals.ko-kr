@@ -1,12 +1,12 @@
 ---
 lab:
-    title: '랩 02: SQL을 사용하여 Azure SQL Database 쿼리'
-    module: '모듈 02: Azure에서 관계형 데이터 살펴보기'
+  title: '랩 02: SQL을 사용하여 Azure SQL Database 쿼리하기'
+  module: 'Module 02: Explore relational data in Azure'
 ---
 
-## 지침
-Contoso는 SQL 데이터베이스를 프로비전하고 모든 인벤토리 데이터를 데이터 저장소에 가져왔습니다. 수석 개발자로서 데이터를 통해 몇 가지 쿼리를 실행해 달라는 요청을 받았습니다.
+## <a name="instructions"></a>Instructions
+Contoso는 SQL 데이터베이스를 프로비저닝하고 모든 인벤토리 데이터를 데이터 저장소로 가져왔습니다. 책임 개발자는 데이터에 대해 몇 가지 쿼리를 실행해달라는 요청을 받았습니다.
 
-이 랩에서는 이 연습에서는 데이터베이스에 있는 상품의 수와 특정 제품의 재고 항목 수를 알아내기 위해 데이터베이스를 쿼리합니다.
+이 랩에서는 데이터베이스에 있는 상품의 수와 특정 제품의 재고 항목 수를 알아내기 위해 데이터베이스를 쿼리합니다.
 
-1.	Microsoft Learn 연습(https://aka.ms/dp900lab02-kor)으로 이동하고 브라우저에서 단원을 완료합니다. 
+1.  https://aka.ms/dp900lab02 의 Microsoft Learn 연습으로 이동하여 브라우저에서 단원을 완료합니다. 
