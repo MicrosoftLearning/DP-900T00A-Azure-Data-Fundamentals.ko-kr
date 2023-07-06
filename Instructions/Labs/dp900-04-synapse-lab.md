@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of large-scale data warehousing
 ---
 
-# <a name="explore-data-analytics-in-azure-with-azure-synapse-analytics"></a>Azure Synapse Analytics를 사용하여 Azure에서 데이터 분석 살펴보기
+# Azure Synapse Analytics를 사용하여 Azure에서 데이터 분석 살펴보기
 
 이 연습에서는 Azure 구독에서 Azure Synapse Analytics 작업 영역을 프로비저닝하고 이를 사용하여 데이터를 수집하고 쿼리합니다.
 
 이 랩을 완료하는 데 약 **30**분이 걸립니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## 시작하기 전에
 
 관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
 
-## <a name="provision-an-azure-synapse-analytics-workspace"></a>Azure Synapse Analytics 작업 영역 프로비저닝
+## Azure Synapse Analytics 작업 영역 프로비저닝
 
 Azure Synapse Analytics를 사용하려면 Azure 구독에서 Azure Synapse Analytics 작업 영역 리소스를 프로비저닝 해야 합니다.
 
@@ -53,7 +53,7 @@ Azure Synapse Analytics를 사용하려면 Azure 구독에서 Azure Synapse Anal
 
     ![리소스를 관리하고 데이터 분석 작업을 수행하는 데 사용하는, 확장된 Synapse Studio 메뉴를 보여 주는 이미지](images/synapse-studio.png)
 
-## <a name="ingest-data"></a>데이터 수집
+## 데이터 수집
 
 Azure Synapse Analytics로 수행할 수 있는 대표적인 핵심 작업은 분석을 위해 데이터를 다양한 소스에서 작업 영역으로 전송하는(필요하다면 변환하는) 파이프라인을 정의하는 일입니다.
 
@@ -61,7 +61,7 @@ Azure Synapse Analytics로 수행할 수 있는 대표적인 핵심 작업은 �
 2. 데이터 복사 도구의 **속성** 단계에서 **기본 제공 복사 작업**과 **지금 한 번 실행**이 선택되어 있는지 확인하고 **다음 >** 을 클릭합니다.
 3. **원본** 단계의 **데이터 세트** 하위 단계에서 다음 설정을 선택합니다.
     - **데이터 유형**: 모두
-    - **연결**: 새 연결을 만들고 나타나는 **새 연결** 창의 **파일** 탭에서 **HTTP**를 선택합니다. 그리고 나서 다음 설정을 사용해 데이터 파일에 연결합니다. 
+    - **연결**: *새 연결을 만들고 표시되는 **새 연결** 창의 **일반 프로토콜** 탭에서 **HTTP**를 선택합니다. 그런 다음, 계속하여 다음 설정을 사용하여 데이터 파일에 대한 연결을 만듭니*다.
         - **이름**: AdventureWorks Products
         - **설명**: HTTP를 통한 제품 목록
         - **통합 런타임을 통해 연결**: AutoResolveIntegrationRuntime
@@ -112,7 +112,7 @@ Azure Synapse Analytics로 수행할 수 있는 대표적인 핵심 작업은 �
 
     ![Synapse 작업 영역의 파일 스토리지가 있는 Azure Data Lake Storage Gen 2 계층 구조가 확장된 Synapse Studio를 보여 주는 이미지](images/synapse-storage.png)
 
-## <a name="use-a-sql-pool-to-analyze-data"></a>SQL 풀을 사용하여 데이터 분석
+## SQL 풀을 사용하여 데이터 분석
 
 작업 영역에 일부 데이터를 수집했으므로, 이제 Synapse Analytics를 사용하여 데이터를 쿼리하고 분석할 수 있습니다. 데이터를 쿼리하는 가장 일반적인 방법은 SQL를 사용하는 것입니다. Synapse Analytics에서는 SQL 풀을 사용하여 SQL 코드를 실행할 수 있습니다.
 
@@ -210,7 +210,7 @@ Azure Synapse Analytics로 수행할 수 있는 대표적인 핵심 작업은 �
 
     ![제품 개수 차트 보기를 보여 주는 이미지](images/column-chart.png)
 
-## <a name="use-a-spark-pool-to-analyze-data"></a>Spark 풀을 사용하여 데이터 분석
+## Spark 풀을 사용하여 데이터 분석
 
 SQL는 구조화된 데이터 세트를 쿼리하는 데 자주 사용하는 언어지만, 많은 데이터 분석가는 Python 같은 언어를 이용해 데이터를 쉽게 탐색하고 분석할 수 있도록 준비하고 있습니다. Azure Synapse Analytics에서는 Apache Spark 기반의 분산 데이터 처리 엔진을 사용하는 Spark 풀에서 Python(및 기타) 코드를 실행할 수 있습니다.
 
@@ -291,7 +291,7 @@ SQL는 구조화된 데이터 세트를 쿼리하는 데 자주 사용하는 언
 
 15. **Notebook 1** 창을 닫고 변경 내용을 취소합니다.
 
-## <a name="delete-azure-resources"></a>Azure 리소스 삭제
+## Azure 리소스 삭제
 
 Azure Synapse Analytics 탐색을 완료했으므로, 지금까지 만든 리소스를 삭제하여 불필요한 Azure 비용을 방지해야 합니다.
 

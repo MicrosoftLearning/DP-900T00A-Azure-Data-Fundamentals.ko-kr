@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-database-for-mysql"></a>Azure Database for MySQL 살펴보기
+# Azure Database for MySQL 살펴보기
 
 이 연습에서는 Azure 구독에서 Azure Database for MySQL 리소스를 프로비저닝합니다.
 
 이 랩을 완료하는 데 약 **5**분이 걸립니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## 시작하기 전에
 
 관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
 
-## <a name="provision-an-azure-database-for-mysql-resource"></a>Azure Database for MySQL 리소스 프로비저닝하기
+## Azure Database for MySQL 리소스 프로비저닝하기
 
 이 연습에서는 Azure Database for MySQL 리소스를 프로비저닝해 봅니다.
 

@@ -4,17 +4,17 @@ lab:
   module: Explore Azure Storage for non-relational data
 ---
 
-# <a name="explore-azure-storage"></a>Azure Storage 살펴보기
+# Azure Storage 살펴보기
 
 이 연습에서는 Azure 구독에서 Azure Storage 계정을 프로비저닝하고 데이터를 저장하는 데 사용할 수 있는 다양한 방법을 살펴봅니다.
 
 이 랩을 완료하는 데 약 **15**분이 걸립니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## 시작하기 전에
 
 관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
 
-## <a name="provision-an-azure-storage-account"></a>Azure Storage 계정 프로비전
+## Azure Storage 계정 프로비전
 
 Azure Storage를 사용하는 첫 번째 단계는 Azure 구독에서 Azure Storage 계정을 프로비전하는 것입니다.
 
@@ -30,10 +30,10 @@ Azure Storage를 사용하는 첫 번째 단계는 Azure 구독에서 Azure Stor
 
 1. **다음: 고급 >** 을 선택하고 구성 옵션을 검토합니다. 특히, Azure Data Lake Storage Gen2를 지원하려면 여기서 계층 구조 네임스페이스를 사용하도록 설정할 수 있습니다. 이 옵션을 **<u>선택 취소</u>** 된 상태로 두고(나중에 사용하도록 설정) **다음: 네트워킹 >** 을 선택하여 스토리지 계정의 네트워킹 옵션을 확인합니다.
 1. **다음: 데이터 보호 >** 를 선택한 다음 **복구** 섹션에서 **일시 삭제 사용...** 옵션을 모두 선택 <u>취소</u>합니다. 이러한 옵션은 이후의 복구를 위해 삭제된 파일을 유지하지만 나중에 계층 구조 네임스페이스를 사용하도록 설정하면 문제가 발생할 수 있습니다.
-1. 기본 설정을 변경하지 않고 나머지 **다음 >** 페이지를 계속 진행한 다음 **검토 + 만들기** 페이지에서 선택 항목의 유효성이 검사될 때까지 기다렸다가 **만들기**를 선택하여 Azure Storage 계정을 만듭니다.
+1. 기본 설정을 변경하지 않고 나머지 **다음 >** 페이지를 계속 진행한 다음  **검토** 페이지에서 선택 항목의 유효성이 검사될 때까지 기다렸다가 **만들기** 를 선택하여 Azure Storage 계정을 만듭니다.
 1. 배포가 완료될 때까지 기다립니다. 그런 다음 배포된 리소스로 이동합니다.
 
-## <a name="explore-blob-storage"></a>Blob 스토리지 살펴보기
+## Blob 스토리지 살펴보기
 
 이제 Azure Storage 계정이 있으므로 Blob 데이터용 컨테이너를 만들 수 있습니다.
 
@@ -62,7 +62,7 @@ Azure Storage를 사용하는 첫 번째 단계는 Azure 구독에서 Azure Stor
 1. 폴더의 오른쪽 끝에 있는 **&#x2027;&#x2027;&#x2027;** 아이콘을 선택합니다(아무 옵션도 표시되지 않음). 단일 구조 네임스페이스 Blob 컨테이너의 폴더는 가상이며 관리할 수 없습니다.
 1. **data** 페이지의 오른쪽 위에 있는 **X** 아이콘을 사용하여 페이지를 닫고 **컨테이너** 페이지로 돌아갑니다.
 
-## <a name="explore-azure-data-lake-storage-gen2"></a>Azure Data Lake Storage Gen2 살펴보기
+## Azure Data Lake Storage Gen2 살펴보기
 
 Azure Data Lake Store Gen2 지원을 사용하면 계층적 폴더를 사용하여 Blob에 대한 액세스를 구성하고 관리할 수 있습니다. 또한 Azure Blob Storage를 사용하여 일반적인 빅 데이터 분석 플랫폼의 분산 파일 시스템을 호스트할 수 있습니다.
 
@@ -79,7 +79,7 @@ Azure Data Lake Store Gen2 지원을 사용하면 계층적 폴더를 사용하�
 1. 폴더의 오른쪽 끝에 있는 **&#x2027;&#x2027;&#x2027;** 아이콘을 선택합니다. 계층 구조 네임스페이스를 사용하도록 설정하면 폴더 수준에서 폴더 이름 바꾸기, 권한 설정 등의 구성 작업을 수행할 수 있습니다.
 1. **data** 페이지의 오른쪽 위에 있는 **X** 아이콘을 사용하여 페이지를 닫고 **컨테이너** 페이지로 돌아갑니다.
 
-## <a name="explore-azure-files"></a>Azure Files 살펴보기
+## Azure Files 살펴보기
 
 Azure Files는 클라우드 기반 파일 공유를 만드는 방법을 제공합니다.
 
@@ -89,7 +89,7 @@ Azure Files는 클라우드 기반 파일 공유를 만드는 방법을 제공�
 1. 페이지 위쪽에서 **연결**을 선택합니다. 그러면 **연결** 창에는 클라이언트 컴퓨터에서 공유 폴더에 연결하기 위해 실행할 수 있는 스크립트가 포함된 일반 운영 체제(Windows, Linux 및 macOS)용 탭이 있습니다.
 1. **연결** 창을 닫은 다음 **files** 페이지를 닫아 Azure Storage 계정의 **파일 공유** 페이지로 돌아갑니다.
 
-## <a name="explore-azure-tables"></a>Azure 테이블 살펴보기
+## Azure 테이블 살펴보기
 
 Azure 테이블은 데이터 값을 저장해야 하지만 관계형 데이터베이스의 전체 기능 및 구조가 필요하지 않은 애플리케이션에 키/값 저장소를 제공합니다.
 

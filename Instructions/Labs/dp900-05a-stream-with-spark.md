@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-spark-streaming-in-azure-synapse-analytics"></a>Azure Synapse Analytics에서 Spark 스트리밍 살펴보기
+# Azure Synapse Analytics에서 Spark 스트리밍 살펴보기
 
 이 연습에서는 Azure Synapse Analytics에서 Spark 구조적 스트리밍과 델타 테이블을 사용하여 스트리밍 데이터를 처리합니다.
 
 이 랩을 완료하는 데 약 **15**분이 걸립니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## 시작하기 전에
 
 관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
 
-## <a name="provision-a-synapse-analytics-workspace"></a>Synapse Analytics 작업 영역 프로비전
+## Synapse Analytics 작업 영역 프로비전
 
 Synapse Analytics를 사용하려면 Azure 구독에서 Synapse Analytics 작업 영역 리소스를 프로비전해야 합니다.
 
@@ -43,7 +43,7 @@ Synapse Analytics를 사용하려면 Azure 구독에서 Synapse Analytics 작업
 
     ![Synapse Studio](images/synapse-studio.png)
 
-## <a name="create-a-spark-pool"></a>Spark 풀 만들기
+## Spark 풀 만들기
 
 Spark를 사용하여 스트리밍 데이터를 처리하려면 Azure Synapse 작업 영역에 Spark 풀을 추가해야 합니다.
 
@@ -56,7 +56,7 @@ Spark를 사용하여 스트리밍 데이터를 처리하려면 Azure Synapse �
     - **노드 수** 3----3
 3. Spark 풀을 검토하고 만든 다음, 배포될 때까지 기다립니다(몇 분 정도 걸릴 수 있습니다).
 
-## <a name="explore-stream-processing"></a>스트림 처리 살펴보기
+## 스트림 처리 살펴보기
 
 Spark를 사용하여 스트림 처리를 탐색하려면 Spark 구조적 스트리밍 및 델타 테이블로 몇 가지 기본 스트림을 쉽게 처리할 수 있는 Python 코드와 메모가 포함된 Notebook을 사용합니다.
 
@@ -65,7 +65,7 @@ Spark를 사용하여 스트림 처리를 탐색하려면 Spark 구조적 스트
 3. **&#65291;** 메뉴에서 **&#8612; 가져오기**를 선택하고, 로컬 컴퓨터에서 **Structured Streaming and Delta Tables.ipynb** 파일을 선택합니다.
 4. Notebook의 지침에 따라 Spark 풀에 연결하고, 포함된 코드 셀을 실행하여 스트림 처리에 Spark를 사용하는 다양한 방법을 살펴봅니다.
 
-## <a name="delete-azure-resources"></a>Azure 리소스 삭제
+## Azure 리소스 삭제
 
 >                 **참고**: : Azure Synapse Analytics를 사용하는 다른 연습을 완료하려는 경우에는 이 섹션을 건너뛸 수 있습니다. 그렇지 않은 경우에는 다음 단계를 따라 불필요한 Azure 비용을 방지하세요.
 
