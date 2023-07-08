@@ -1,10 +1,10 @@
-# <a name="dp-900-trainer-lab-mapping"></a>DP-900 트레이너 랩 매핑
+# DP-900 트레이너 랩 매핑
 
 이 과정, DP-900: Microsoft Azure Data Fundamentals에는 강사 진행 교육용으로 지정된 랩 세트가 있습니다. 
 
 > 참고: 강사는 연결된 Learn 학습 경로(https://docs.microsoft.com/users/23110622/collections/0kjyh8rn5gdrjj) )의 연습을 사용하여 학생에게 시간을 내서 하나 이상의 랩을 완료하도록 요청할 수 있습니다. 
 
-## <a name="dp-900-module-mapping-to-labs"></a>DP-900 모듈 및 랩 매핑
+## DP-900 모듈 및 랩 매핑
 
 | 모듈 | 랩 | Markdown 파일 |
 | --- | --- | --- |
