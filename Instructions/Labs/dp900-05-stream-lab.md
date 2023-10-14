@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-azure-stream-analytics"></a>Azure Stream Analytics 살펴보기
+# Azure Stream Analytics 살펴보기
 
 이 연습에서는 Azure 구독에서 Azure Stream Analytics 작업을 프로비저닝하고 이를 사용하여 실시간 데이터 스트림을 처리합니다.
 
 이 랩을 완료하는 데 약 **15**분이 걸립니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## 시작하기 전에
 
 관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
 
-## <a name="create-azure-resources"></a>Azure 리소스 만들기
+## Azure 리소스 만들기
 
 1. Azure 구독 자격 증명을 사용하여 [Azure Portal](https://portal.azure.com)에서 Azure 구독에 로그인합니다.
 
@@ -40,6 +40,8 @@ lab:
     bash setup.sh
     ```
 
+    > 향후 변경 내용 및 실험적 기능에 대한 경고 메시지를 무시합니다.
+
     스크립트가 실행될 때까지 기다렸다가 다음 작업을 수행합니다.
 
     1. 리소스를 만드는 데 필요한 Azure CLI 확장을 설치합니다(실험적 확장에 대한 경고는 무시해도 됨).
@@ -48,7 +50,7 @@ lab:
     1. *Azure Storage Account*를 만듭니다. 이것은 처리된 데이터를 저장하는 데 사용됩니다.
     1. *Azure Stream Analytics* 작업을 만듭니다. 이것은 들어오는 디바이스 데이터를 실시간으로 처리하고 그 결과를 스토리지 계정에 쓰게 됩니다.
 
-## <a name="explore-the-azure-resources"></a>Azure 리소스 살펴보기
+## Azure 리소스 살펴보기
 
 1. [Azure Portal](https://portal.azure.com?azure-portal=true) 홈페이지에서 **리소스 그룹**을 선택하여 구독의 리소스 그룹을 확인합니다. 여기에는 설치 스크립트로 확인된 **learn*xxxxxxxxxxxxxxxxx...** * 리소스 그룹이 포함되어야 합니다.
 2. **learn*xxxxxxxxxxxxxxxxx...** * 리소스 그룹을 선택하고, 그 안에 있는 리소스를 검토합니다. 다음이 포함되어야 합니다.
@@ -58,11 +60,11 @@ lab:
 
     이 세 리소스가 모두 표시되지 않으면 표시될 때까지 **&#8635; Refresh** 단추를 클릭합니다.
 
- 3. **stream*xxxxxxxxxxxxx*** Stream Analytics 작업을 선택하고 해당 **개요** 페이지에서 정보를 확인합니다. 다음 상세 정보에 유의합니다.
+3. **stream*xxxxxxxxxxxxx*** Stream Analytics 작업을 선택하고 해당 **개요** 페이지에서 정보를 확인합니다. 다음 상세 정보에 유의합니다.
     - 이 작업은 **iotinput**이라는 입력과 **bloboutput**이라는 출력이 하나씩 있습니다. 이는 설치 스크립트에서 만든 IoT Hub 및 Storage 계정을 참조합니다.
     - 이 작업에는 **iotinput** 입력에서 데이터를 읽고 10초마다 처리되는 메시지 수를 계수하여 집계하고 그 결과를 **bloboutput** 출력에 기록하는 쿼리가 있습니다.
 
-## <a name="use-the-resources-to-analyze-streaming-data"></a>리소스를 사용하여 스트리밍 데이터 분석
+## 리소스를 사용하여 스트리밍 데이터 분석
 
 1. Stream Analytics 작업용 **개요** 페이지 상단에서 **&#9655; 시작** 단추를 선택한 다음 **작업 시작** 창에서 **시작**을 선택하여 작업을 시작합니다.
 2. 스트리밍 작업이 시작되었다는 알림을 기다립니다.
