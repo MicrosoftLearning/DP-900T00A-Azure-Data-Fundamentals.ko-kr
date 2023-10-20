@@ -11,6 +11,6 @@
 | 02-Azure에서 관계형 데이터 살펴보기 | Azure SQL Database 살펴보기 | [dp900-01-sql-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01-sql-lab.md) |
 | 03-Azure에서 비관계형 데이터 살펴보기 | Azure Storage 살펴보기 | [dp900-02-storage-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-02-storage-lab.md) |
 | 03-Azure에서 비관계형 데이터 살펴보기| Azure Cosmos DB 살펴보기  | [dp900-03-cosmos-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-03-cosmos-lab.md) |
-| 04-Azure에서 데이터 분석 살펴보기 | Azure Synapse Analytics 살펴보기 | [dp900-04-synapse-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-04-synapse-lab.md) |
-| 04-Azure에서 데이터 분석 살펴보기 | Azure Stream Analytics 살펴보기 | [dp900-05-stream-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05-stream-lab.md) |
+| 04-Azure에서 데이터 분석 살펴보기 | Microsoft Fabric 살펴보기 | [dp900-04b-fabric-lake-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-04b-fabric-lake-lab.md) |
+| 04-Azure에서 데이터 분석 살펴보기 | Microsoft Fabric에서 실시간 분석 살펴보기 | [dp900-05c-fabric-realtime-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05c-fabric-realtime-lab.md) |
 | 04-Azure에서 데이터 분석 살펴보기 | Power BI를 사용하여 데이터 시각화 | [dp900-pbi-06-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-pbi-06-lab.md) |
