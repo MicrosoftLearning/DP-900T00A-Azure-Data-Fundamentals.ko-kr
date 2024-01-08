@@ -35,9 +35,20 @@ lab:
 
 2. 실시간 분석 홈페이지에서 원하는 이름으로 새 **KQL 데이터베이스**를 만듭니다.
 
-    1분 정도 지나면 새 KQL 데이터베이스가 만들어집니다.
+    ![KQL DB 만들기가 강조 표시된 RTA 편집기의 스크린샷](./images/create-kql-db.png)
+
+   대시보드 화면이 표시되고 맨 위에 있는 KQL 데이터베이스 단추를 선택합니다.
 
     ![새 KQL 데이터베이스의 스크린샷.](./images/kql-database.png)
+
+    선택되면 KQL 데이터베이스에 ***이름을 지정하는 새 KQL 데이터베이스*** 대화 상자가 제공됩니다.
+
+    ![새 KQL 데이터베이스 이름 대화 상자의 스크린샷](./images/name-kql-db.png)
+
+   - 데이터베이스 이름을 지정합니다. 이 시나리오에서는 다음과 같습니다. `my_kql_db` 
+   - 클릭, ***만들기***
+  
+    1분 정도 지나면 새 KQL 데이터베이스가 만들어집니다.
 
     현재 데이터베이스에는 테이블이 없습니다.
 
@@ -91,7 +102,7 @@ Eventstream은 KQL 데이터베이스의 테이블을 지속적으로 채워 실
     ```kql
     // This query returns the number of taxi pickups per hour
     ['taxi-data']
-    | summarize PickupCount = count() by bin(tpep_pickup_datetime, 1h)
+    | summarize PickupCount = count() by bin(todatetime(tpep_pickup_datetime), 1h)
     ```
 
 1. **▷ 실행** 단추를 사용하여 각 쿼리를 실행하고 각 시간에 대한 택시 승차 횟수를 표시하는 결과를 검토합니다.
