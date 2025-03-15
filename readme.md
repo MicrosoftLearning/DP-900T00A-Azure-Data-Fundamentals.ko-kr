@@ -1,11 +1,3 @@
-#README
-
-We've turned off the ability to report issues directly on this repo and do not monitor PRs.
-
-Provide feedback here: https://aka.ms/provide-feedback
-
-Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
-
 # Microsoft Azure 데이터 기본 사항
 
 이 리포지토리에는 Microsoft 과정 [DP-900 *Microsoft Azure 데이터 기본 사항*](https://docs.microsoft.com/en-us/learn/certifications/courses/dp-900t00)에 대한 실습 랩 연습 및 [Microsoft Learn의 자기 주도적 모듈](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn5gdrjj/)이 포함되어 있습니다. 이 랩에서는 학습 자료가 함께 제공되며 학습 자료에서 설명하는 기술을 사용하여 연습할 수 있도록 설계되었습니다. 
