@@ -10,11 +10,7 @@ lab:
 
 이 랩을 완료하는 데 약 **20**분이 걸립니다.
 
-## 시작하기 전에
-
-관리 수준 액세스 권한이 있는 [Azure 구독](https://azure.microsoft.com/free)이 필요합니다.
-
-### Power BI Desktop 설치
+## Power BI Desktop 설치
 
 Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 않은 경우 무료로 다운로드하여 설치할 수 있습니다.
 
@@ -86,7 +82,7 @@ Microsoft Power BI Desktop이 아직 Windows 컴퓨터에 설치되어 있지 �
 
     ![Power BI에서 계층 구조의 이름을 바꾸는 방법을 보여 주는 스크린샷](images/rename-hierarchy.png)
 
-1. 왼쪽 가장자리에서 **데이터 뷰** 탭을 선택한 다음, **데이터** 창에서 **고객** 테이블을 선택합니다.
+1. 왼쪽 가장자리에서 **테이블 보기** 탭을 선택한 다음 **데이터** 창에서 **고객** 테이블을 선택합니다.
 1. **시** 열 머리글을 선택한 다음, 해당 **데이터 범주** 속성을 **도시**로 설정합니다.
 
     ![Power BI에서 데이터 범주를 설정하는 방법을 보여 주는 스크린샷](images/data-category.png)
