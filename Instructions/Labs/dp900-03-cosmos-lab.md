@@ -17,9 +17,10 @@ lab:
 
 Cosmos DB를 사용하려면 Azure 구독에서 Cosmos DB 계정을 프로비저닝 해야 합니다. 이 연습에서는 Azure Cosmos DB for NoSQL을 사용하는 Cosmos DB 계정을 프로비저닝합니다.
 
-1. Azure Portal 왼쪽 위에서 **+ 리소스 만들기**를 선택하고 *Azure Cosmos DB*를 검색합니다.  결과에서 **Azure Cosmos DB**를 선택하고 **만들기**를 선택합니다.
+1. Azure Portal 왼쪽 위에서 **+ 리소스 만들기**를 선택하고 `Azure Cosmos DB`을(를) 검색합니다.  결과에서 **Azure Cosmos DB**를 선택하고 **만들기**를 선택합니다.
 1. **Azure Cosmos DB for NoSQL** 타일에서 **만들기**를 선택합니다.
 1. 다음 세부 정보를 입력한 다음 **검토 + 만들기**를 선택합니다.
+    - **워크로드 유형**: 학습
     - **구독**: 샌드박스를 사용하고 있다면 *컨시어지 구독*을 선택합니다. 그렇지 않다면 사용자의 Azure 구독을 선택합니다.
     - **리소스 그룹**: 샌드박스를 사용하고 있다면 기존 리소스 그룹을 선택합니다(이름의 예: *learn-xxxx...*). 그렇지 않다면 원하는 이름으로 새 리소스 그룹을 만듭니다.
     - **계정 이름**: 고유한 이름을 입력합니다.
@@ -47,14 +48,14 @@ Cosmos DB를 사용하려면 Azure 구독에서 Cosmos DB 계정을 프로비저
 1. 다음과 같이 새 항목에 대한 JSON을 수정한 다음 **저장**을 선택합니다.
 
     ```json
-    {
-        "name": "Road Helmet,45",
-        "id": "123456789",
-        "categoryID": "123456789",
-        "SKU": "AB-1234-56",
-        "description": "The product called \"Road Helmet,45\" ",
-        "price": 48.74
-    }
+   {
+       "name": "Road Helmet,45",
+       "id": "123456789",
+       "categoryID": "123456789",
+       "SKU": "AB-1234-56",
+       "description": "The product called \"Road Helmet,45\" ",
+       "price": 48.74
+   }
     ```
 
 1. 새 항목을 저장하면 추가 메타데이터 속성이 자동으로 추가됩니다.
@@ -67,9 +68,9 @@ Cosmos DB를 사용하려면 Azure 구독에서 Cosmos DB 계정을 프로비저
 1. 쿼리를 다음과 같이 수정합니다.
 
     ```sql
-    SELECT *
-    FROM c
-    WHERE CONTAINS(c.name,"Helmet")
+   SELECT *
+   FROM c
+   WHERE CONTAINS(c.name,"Helmet")
     ```
 
 1. **쿼리 실행** 단추를 사용하여 수정된 쿼리를 실행하고 결과를 검토합니다. 여기에는 **이름** 필드에 "Helmet"이라는 텍스트가 포함된 항목의 JSON 엔터티가 포함됩니다.
