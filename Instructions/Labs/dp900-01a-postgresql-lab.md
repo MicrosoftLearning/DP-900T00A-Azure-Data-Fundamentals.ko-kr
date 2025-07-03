@@ -18,7 +18,7 @@ lab:
 
 이 연습에서는 Azure Database for PostgreSQL 리소스를 프로비저닝해 봅니다.
 
-1. Azure Portal의 왼쪽 상단에서 **&#65291; 리소스 만들기**를 선택하고 *Azure Database for PostgreSQL*을 검색합니다. 그런 다음 표시되는 **Azure Database for PostgreSQL** 페이지에서 **만들기**를 선택합니다.
+1. Azure Portal에서 왼쪽 상단 모서리에 있는 **&#65291; 리소스 만들기**를 선택하고 `Azure Database for PostgreSQL`을(를) 검색합니다. 그런 다음 표시되는 **Azure Database for PostgreSQL** 페이지에서 **만들기**를 선택합니다.
 
 1. 사용 가능한 Azure Database for PostgreSQL 옵션을 검토한 다음, **Azure Database for PostgreSQL** 타일에서 **유연한 서버(권장)** 를 선택한 후 **만들기**를 선택합니다.
 
